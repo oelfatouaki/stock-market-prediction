@@ -6,6 +6,8 @@ A complete, honest machine-learning project that predicts whether a stock closes
 
 ![Backtest equity curves](reports/figures/AAPL_equity_all_models.png)
 
+**Detailed walkthrough:** [Download the full 12-page PDF report](reports/Stock_Direction_Predictor_Report.pdf), covering every phase from data collection to deployment with figures and result tables.
+
 ## About me
 
 Hi, I'm Oussama, a Computer Science graduate learning data science and AI. I'm building real-world projects in Python and machine learning to prepare for a career in data.
