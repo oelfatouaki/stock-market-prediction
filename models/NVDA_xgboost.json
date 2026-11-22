@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "name": "xgboost",
+  "ticker": "NVDA",
+  "features": [
+    "ret_1",
+    "ret_2",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20",
+    "ema_20",
+    "sma_50",
+    "ema_50",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "macd_diff",
+    "bb_width",
+    "bb_pos",
+    "atr_14",
+    "vol_10",
+    "vol_20",
+    "vol_chg",
+    "vol_ratio",
+    "hl_range",
+    "oc_change",
+    "gap",
+    "dow",
+    "month",
+    "mkt_SPY_ret_1",
+    "mkt_SPY_vol_20",
+    "mkt_SPY_vol_chg",
+    "mkt_VIX_ret_1",
+    "mkt_VIX_vol_20"
+  ],
+  "trained_at": "2026-11-22T03:23:23",
+  "train_range": [
+    "2010-03-16",
+    "2023-07-18"
+  ],
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.5333333333333333,
+    "precision": 0.5482142857142858,
+    "recall": 0.6883408071748879,
+    "f1": 0.610337972166998,
+    "roc_auc": 0.5271505315153309,
+    "log_loss": 0.6923496157931918,
+    "positive_rate_pred": 0.6666666666666666,
+    "positive_rate_actual": 0.530952380952381,
+    "n_samples": 840,
+    "tn": 141,
+    "fp": 253,
+    "fn": 139,
+    "tp": 307,
+    "report": {
+      "0": {
+        "precision": 0.5035714285714286,
+        "recall": 0.35786802030456855,
+        "f1-score": 0.41839762611275966,
+        "support": 394.0
+      },
+      "1": {
+        "precision": 0.5482142857142858,
+        "recall": 0.6883408071748879,
+        "f1-score": 0.610337972166998,
+        "support": 446.0
+      }
+    },
+    "confident_subset": {
+      "n": 410,
+      "coverage": 0.4880952380952381,
+      "accuracy": 0.551219512195122
+    }
+  },
+  "tuned_params": {},
+  "walk_forward": {
+    "mean_accuracy": 0.501252236135957,
+    "mean_precision": 0.5254136660172717,
+    "mean_recall": 0.5996557619209597,
+    "mean_f1": 0.5552823911171069,
+    "mean_roc_auc": 0.5018443868146166,
+    "std_accuracy": 0.046242513046943975
+  }
+}

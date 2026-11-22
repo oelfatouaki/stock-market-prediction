@@ -73,16 +73,20 @@ Baselines first — these are the bar a model must clear:
 
 The strategies take only ~30–40% market exposure and therefore have lower volatility and drawdowns, but none beats buy-and-hold on total return or Sharpe. Lower drawdown is a property of being out of the market, not evidence of predictive skill.
 
-### Multi-ticker check (XGBoost, same setup)
+### Multi-ticker check (XGBoost, same setup, all 8 tickers)
 
 | Ticker | Test accuracy | ROC-AUC | Walk-forward CV | Strategy return | Buy & hold |
 |---|---:|---:|---:|---:|---:|
 | AAPL | 0.5143 | 0.4986 | 0.5252 | 40.2% | 78.3% |
 | MSFT | 0.4905 | 0.5116 | 0.5156 | -4.2% | 40.2% |
-| TSLA | 0.5110 | 0.5356 | 0.5101 | 53.7% | 48.3% |
+| GOOGL | 0.5107 | 0.5161 | 0.5059 | 16.0% | 119.5% |
+| AMZN | 0.4964 | 0.5109 | 0.5156 | -29.1% | 82.3% |
+| META | 0.4917 | 0.4794 | 0.5194 | -7.8% | 58.4% |
+| TSLA | 0.5110 | 0.5356 | 0.5101 | 53.6% | 48.3% |
+| NVDA | 0.5333 | 0.5272 | 0.5013 | 208.4% | 167.5% |
 | SPY | 0.5321 | 0.4988 | 0.5091 | 26.7% | 57.7% |
 
-The model is not consistently good on any asset; TSLA's slightly better rankings do not translate into a reliable edge. Results across tickers and periods are in `reports/*.csv` and `reports/*_summary.json`.
+Six of eight models are worse than their always-up baseline on the test set. NVDA is the one apparent winner (both accuracy and backtest), but its walk-forward CV was only 0.5013 — essentially random — and picking the best of eight tickers after the fact is selection bias. TSLA's slightly better ranking likewise rests on a single period. There is no consistent, transferable edge. Results for every ticker are in `reports/*.csv` and `reports/*_summary.json`.
 
 ## 6. Interpretation
 
@@ -110,7 +114,7 @@ pip install -r requirements.txt
 
 # 1. Data
 python -m src.cli download --tickers AAPL MSFT GOOGL AMZN META TSLA NVDA SPY '^VIX' --start 2010-01-01
-python -m src.cli prepare --tickers AAPL MSFT TSLA SPY --market
+python -m src.cli prepare --tickers AAPL MSFT GOOGL AMZN META TSLA NVDA SPY --market
 
 # 2. Train and evaluate once on the holdout
 python -m src.cli train --ticker AAPL --model xgboost --with-market --tune

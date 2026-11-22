@@ -1,0 +1,81 @@
+{
+  "ticker": "NVDA",
+  "model": "xgboost",
+  "test_range": [
+    "2023-07-19",
+    "2026-11-19"
+  ],
+  "metrics": {
+    "accuracy": 0.5333333333333333,
+    "precision": 0.5482142857142858,
+    "recall": 0.6883408071748879,
+    "f1": 0.610337972166998,
+    "roc_auc": 0.5271505315153309,
+    "log_loss": 0.6923496157931918,
+    "positive_rate_pred": 0.6666666666666666,
+    "positive_rate_actual": 0.530952380952381,
+    "n_samples": 840,
+    "tn": 141,
+    "fp": 253,
+    "fn": 139,
+    "tp": 307,
+    "report": {
+      "0": {
+        "precision": 0.5035714285714286,
+        "recall": 0.35786802030456855,
+        "f1-score": 0.41839762611275966,
+        "support": 394.0
+      },
+      "1": {
+        "precision": 0.5482142857142858,
+        "recall": 0.6883408071748879,
+        "f1-score": 0.610337972166998,
+        "support": 446.0
+      }
+    },
+    "confident_subset": {
+      "n": 410,
+      "coverage": 0.4880952380952381,
+      "accuracy": 0.551219512195122
+    }
+  },
+  "walk_forward": {
+    "mean_accuracy": 0.501252236135957,
+    "mean_precision": 0.5254136660172717,
+    "mean_recall": 0.5996557619209597,
+    "mean_f1": 0.5552823911171069,
+    "mean_roc_auc": 0.5018443868146166,
+    "std_accuracy": 0.046242513046943975
+  },
+  "backtest": {
+    "total_return": 2.0841570031449024,
+    "cagr": 0.4019771761706652,
+    "annualized_vol": 0.369867951149919,
+    "sharpe": 1.097588739972069,
+    "sortino": 1.4633550354898832,
+    "max_drawdown": 0.29282926326603187,
+    "win_rate_days": 0.4382183908045977,
+    "best_day": 0.1872273833519637,
+    "worst_day": -0.1400876664389729,
+    "n_days": 840,
+    "trades": 275,
+    "total_cost": 0.275,
+    "exposure": 0.6666666666666666,
+    "threshold": 0.5,
+    "cost_per_trade": 0.001,
+    "mode": "long"
+  },
+  "buy_and_hold": {
+    "total_return": 1.674666759217243,
+    "cagr": 0.34332440246359575,
+    "annualized_vol": 0.471772641635225,
+    "sharpe": 0.8615817338357482,
+    "sortino": 1.2518240572964474,
+    "max_drawdown": 0.47529679026493865,
+    "win_rate_days": 0.531585220500596,
+    "best_day": 0.1872273833519637,
+    "worst_day": -0.1696815821465199,
+    "n_days": 840
+  },
+  "artifact": "/Users/mac/stock-market/models/NVDA_xgboost.joblib"
+}

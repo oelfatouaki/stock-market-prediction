@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "name": "xgboost",
+  "ticker": "AMZN",
+  "features": [
+    "ret_1",
+    "ret_2",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20",
+    "ema_20",
+    "sma_50",
+    "ema_50",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "macd_diff",
+    "bb_width",
+    "bb_pos",
+    "atr_14",
+    "vol_10",
+    "vol_20",
+    "vol_chg",
+    "vol_ratio",
+    "hl_range",
+    "oc_change",
+    "gap",
+    "dow",
+    "month",
+    "mkt_SPY_ret_1",
+    "mkt_SPY_vol_20",
+    "mkt_SPY_vol_chg",
+    "mkt_VIX_ret_1",
+    "mkt_VIX_vol_20"
+  ],
+  "trained_at": "2026-11-22T03:23:16",
+  "train_range": [
+    "2010-03-16",
+    "2023-07-18"
+  ],
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.49642857142857144,
+    "precision": 0.5127551020408163,
+    "recall": 0.46420323325635104,
+    "f1": 0.48727272727272725,
+    "roc_auc": 0.5109203261628205,
+    "log_loss": 0.6995430163370648,
+    "positive_rate_pred": 0.4666666666666667,
+    "positive_rate_actual": 0.5154761904761904,
+    "n_samples": 840,
+    "tn": 216,
+    "fp": 191,
+    "fn": 232,
+    "tp": 201,
+    "report": {
+      "0": {
+        "precision": 0.48214285714285715,
+        "recall": 0.5307125307125307,
+        "f1-score": 0.5052631578947369,
+        "support": 407.0
+      },
+      "1": {
+        "precision": 0.5127551020408163,
+        "recall": 0.46420323325635104,
+        "f1-score": 0.48727272727272725,
+        "support": 433.0
+      }
+    },
+    "confident_subset": {
+      "n": 386,
+      "coverage": 0.4595238095238095,
+      "accuracy": 0.5181347150259067
+    }
+  },
+  "tuned_params": {},
+  "walk_forward": {
+    "mean_accuracy": 0.5155635062611807,
+    "mean_precision": 0.5386425422413101,
+    "mean_recall": 0.6403518231388425,
+    "mean_f1": 0.5778715122221856,
+    "mean_roc_auc": 0.5122280883925472,
+    "std_accuracy": 0.01602047454542979
+  }
+}

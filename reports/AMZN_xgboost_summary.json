@@ -1,0 +1,81 @@
+{
+  "ticker": "AMZN",
+  "model": "xgboost",
+  "test_range": [
+    "2023-07-19",
+    "2026-11-19"
+  ],
+  "metrics": {
+    "accuracy": 0.49642857142857144,
+    "precision": 0.5127551020408163,
+    "recall": 0.46420323325635104,
+    "f1": 0.48727272727272725,
+    "roc_auc": 0.5109203261628205,
+    "log_loss": 0.6995430163370648,
+    "positive_rate_pred": 0.4666666666666667,
+    "positive_rate_actual": 0.5154761904761904,
+    "n_samples": 840,
+    "tn": 216,
+    "fp": 191,
+    "fn": 232,
+    "tp": 201,
+    "report": {
+      "0": {
+        "precision": 0.48214285714285715,
+        "recall": 0.5307125307125307,
+        "f1-score": 0.5052631578947369,
+        "support": 407.0
+      },
+      "1": {
+        "precision": 0.5127551020408163,
+        "recall": 0.46420323325635104,
+        "f1-score": 0.48727272727272725,
+        "support": 433.0
+      }
+    },
+    "confident_subset": {
+      "n": 386,
+      "coverage": 0.4595238095238095,
+      "accuracy": 0.5181347150259067
+    }
+  },
+  "walk_forward": {
+    "mean_accuracy": 0.5155635062611807,
+    "mean_precision": 0.5386425422413101,
+    "mean_recall": 0.6403518231388425,
+    "mean_f1": 0.5778715122221856,
+    "mean_roc_auc": 0.5122280883925472,
+    "std_accuracy": 0.01602047454542979
+  },
+  "backtest": {
+    "total_return": -0.2912642684645268,
+    "cagr": -0.09812718014539212,
+    "annualized_vol": 0.21167072205618528,
+    "sharpe": -0.38239089508904006,
+    "sortino": -0.43384761502026303,
+    "max_drawdown": 0.3195093160681395,
+    "win_rate_days": 0.3596330275229358,
+    "best_day": 0.1197703152630624,
+    "worst_day": -0.0907912929848724,
+    "n_days": 840,
+    "trades": 312,
+    "total_cost": 0.312,
+    "exposure": 0.4666666666666667,
+    "threshold": 0.5,
+    "cost_per_trade": 0.001,
+    "mode": "long"
+  },
+  "buy_and_hold": {
+    "total_return": 0.823433852033749,
+    "cagr": 0.19747651282073075,
+    "annualized_vol": 0.3255176868479117,
+    "sharpe": 0.7149452484820437,
+    "sortino": 1.1398062244218123,
+    "max_drawdown": 0.308766384318759,
+    "win_rate_days": 0.5173237753882916,
+    "best_day": 0.153205887780321,
+    "worst_day": -0.0897912929848724,
+    "n_days": 840
+  },
+  "artifact": "/Users/mac/stock-market/models/AMZN_xgboost.joblib"
+}
