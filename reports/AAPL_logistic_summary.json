@@ -1,0 +1,81 @@
+{
+  "ticker": "AAPL",
+  "model": "logistic",
+  "test_range": [
+    "2023-07-19",
+    "2026-11-19"
+  ],
+  "metrics": {
+    "accuracy": 0.5047619047619047,
+    "precision": 0.5376569037656904,
+    "recall": 0.5685840707964602,
+    "f1": 0.5526881720430108,
+    "roc_auc": 0.4787371134020619,
+    "log_loss": 0.700809269042027,
+    "positive_rate_pred": 0.569047619047619,
+    "positive_rate_actual": 0.5380952380952381,
+    "n_samples": 840,
+    "tn": 167,
+    "fp": 221,
+    "fn": 195,
+    "tp": 257,
+    "report": {
+      "0": {
+        "precision": 0.4613259668508287,
+        "recall": 0.43041237113402064,
+        "f1-score": 0.44533333333333336,
+        "support": 388.0
+      },
+      "1": {
+        "precision": 0.5376569037656904,
+        "recall": 0.5685840707964602,
+        "f1-score": 0.5526881720430108,
+        "support": 452.0
+      }
+    },
+    "confident_subset": {
+      "n": 234,
+      "coverage": 0.2785714285714286,
+      "accuracy": 0.44017094017094016
+    }
+  },
+  "walk_forward": {
+    "mean_accuracy": 0.5087656529516995,
+    "mean_precision": 0.5364603654102318,
+    "mean_recall": 0.49526353388778527,
+    "mean_f1": 0.49507708176087395,
+    "mean_roc_auc": 0.5017339951202469,
+    "std_accuracy": 0.007652683232990132
+  },
+  "backtest": {
+    "total_return": 0.17442238241237962,
+    "cagr": 0.04941506835523124,
+    "annualized_vol": 0.21420792207049508,
+    "sharpe": 0.3312089832596564,
+    "sortino": 0.3802595922145817,
+    "max_drawdown": 0.30803089683003615,
+    "win_rate_days": 0.43944636678200694,
+    "best_day": 0.1532886144782728,
+    "worst_day": -0.0924561521253716,
+    "n_days": 840,
+    "trades": 200,
+    "total_cost": 0.2,
+    "exposure": 0.569047619047619,
+    "threshold": 0.5,
+    "cost_per_trade": 0.001,
+    "mode": "long"
+  },
+  "buy_and_hold": {
+    "total_return": 0.7833221104577548,
+    "cagr": 0.1895123029964021,
+    "annualized_vol": 0.26432055527991355,
+    "sharpe": 0.7880873251196555,
+    "sortino": 1.1026329579676706,
+    "max_drawdown": 0.3336052250719642,
+    "win_rate_days": 0.5387365911799762,
+    "best_day": 0.1532886144782728,
+    "worst_day": -0.0924561521253716,
+    "n_days": 840
+  },
+  "artifact": "/Users/mac/stock-market/models/AAPL_logistic.joblib"
+}

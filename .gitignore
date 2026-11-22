@@ -1,0 +1,28 @@
+# Environments
+venv/
+.venv/
+env/
+
+# Data (large, re-downloadable)
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Trained artifacts can be large; track with Git LFS if needed
+models/*.joblib

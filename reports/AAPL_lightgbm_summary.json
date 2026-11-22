@@ -1,0 +1,81 @@
+{
+  "ticker": "AAPL",
+  "model": "lightgbm",
+  "test_range": [
+    "2023-07-19",
+    "2026-11-19"
+  ],
+  "metrics": {
+    "accuracy": 0.5047619047619047,
+    "precision": 0.5347490347490348,
+    "recall": 0.6128318584070797,
+    "f1": 0.5711340206185567,
+    "roc_auc": 0.49351678678952654,
+    "log_loss": 0.7035587737003218,
+    "positive_rate_pred": 0.6166666666666667,
+    "positive_rate_actual": 0.5380952380952381,
+    "n_samples": 840,
+    "tn": 147,
+    "fp": 241,
+    "fn": 175,
+    "tp": 277,
+    "report": {
+      "0": {
+        "precision": 0.45652173913043476,
+        "recall": 0.3788659793814433,
+        "f1-score": 0.4140845070422535,
+        "support": 388.0
+      },
+      "1": {
+        "precision": 0.5347490347490348,
+        "recall": 0.6128318584070797,
+        "f1-score": 0.5711340206185567,
+        "support": 452.0
+      }
+    },
+    "confident_subset": {
+      "n": 389,
+      "coverage": 0.4630952380952381,
+      "accuracy": 0.48586118251928023
+    }
+  },
+  "walk_forward": {
+    "mean_accuracy": 0.5112701252236136,
+    "mean_precision": 0.5370299146340549,
+    "mean_recall": 0.5419997008639761,
+    "mean_f1": 0.5294453104584073,
+    "mean_roc_auc": 0.5082578531563859,
+    "std_accuracy": 0.016942769935673074
+  },
+  "backtest": {
+    "total_return": 0.3801026764812254,
+    "cagr": 0.10147189298031067,
+    "annualized_vol": 0.2077808722656099,
+    "sharpe": 0.5673283015948086,
+    "sortino": 0.7793853122648191,
+    "max_drawdown": 0.16278460334567124,
+    "win_rate_days": 0.4130105900151286,
+    "best_day": 0.1532886144782728,
+    "worst_day": -0.0735386291198739,
+    "n_days": 840,
+    "trades": 286,
+    "total_cost": 0.28600000000000003,
+    "exposure": 0.6166666666666667,
+    "threshold": 0.5,
+    "cost_per_trade": 0.001,
+    "mode": "long"
+  },
+  "buy_and_hold": {
+    "total_return": 0.7833221104577548,
+    "cagr": 0.1895123029964021,
+    "annualized_vol": 0.26432055527991355,
+    "sharpe": 0.7880873251196555,
+    "sortino": 1.1026329579676706,
+    "max_drawdown": 0.3336052250719642,
+    "win_rate_days": 0.5387365911799762,
+    "best_day": 0.1532886144782728,
+    "worst_day": -0.0924561521253716,
+    "n_days": 840
+  },
+  "artifact": "/Users/mac/stock-market/models/AAPL_lightgbm.joblib"
+}

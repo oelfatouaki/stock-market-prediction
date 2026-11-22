@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "name": "xgboost",
+  "ticker": "MSFT",
+  "features": [
+    "ret_1",
+    "ret_2",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20",
+    "ema_20",
+    "sma_50",
+    "ema_50",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "macd_diff",
+    "bb_width",
+    "bb_pos",
+    "atr_14",
+    "vol_10",
+    "vol_20",
+    "vol_chg",
+    "vol_ratio",
+    "hl_range",
+    "oc_change",
+    "gap",
+    "dow",
+    "month",
+    "mkt_SPY_ret_1",
+    "mkt_SPY_vol_20",
+    "mkt_SPY_vol_chg",
+    "mkt_VIX_ret_1",
+    "mkt_VIX_vol_20"
+  ],
+  "trained_at": "2026-11-22T01:33:30",
+  "train_range": [
+    "2010-03-16",
+    "2023-07-18"
+  ],
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.49047619047619045,
+    "precision": 0.5152603231597845,
+    "recall": 0.6449438202247191,
+    "f1": 0.5728542914171657,
+    "roc_auc": 0.5115972123453278,
+    "log_loss": 0.7015777928549358,
+    "positive_rate_pred": 0.6630952380952381,
+    "positive_rate_actual": 0.5297619047619048,
+    "n_samples": 840,
+    "tn": 125,
+    "fp": 270,
+    "fn": 158,
+    "tp": 287,
+    "report": {
+      "0": {
+        "precision": 0.4416961130742049,
+        "recall": 0.31645569620253167,
+        "f1-score": 0.3687315634218289,
+        "support": 395.0
+      },
+      "1": {
+        "precision": 0.5152603231597845,
+        "recall": 0.6449438202247191,
+        "f1-score": 0.5728542914171657,
+        "support": 445.0
+      }
+    },
+    "confident_subset": {
+      "n": 473,
+      "coverage": 0.5630952380952381,
+      "accuracy": 0.5369978858350951
+    }
+  },
+  "tuned_params": {},
+  "walk_forward": {
+    "mean_accuracy": 0.5155635062611806,
+    "mean_precision": 0.5422093627948813,
+    "mean_recall": 0.5388460733870795,
+    "mean_f1": 0.5337249621151627,
+    "mean_roc_auc": 0.5245008365707828,
+    "std_accuracy": 0.035854123326391575
+  }
+}

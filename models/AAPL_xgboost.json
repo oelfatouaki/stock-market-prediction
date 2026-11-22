@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "name": "xgboost",
+  "ticker": "AAPL",
+  "features": [
+    "ret_1",
+    "ret_2",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20",
+    "ema_20",
+    "sma_50",
+    "ema_50",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "macd_diff",
+    "bb_width",
+    "bb_pos",
+    "atr_14",
+    "vol_10",
+    "vol_20",
+    "vol_chg",
+    "vol_ratio",
+    "hl_range",
+    "oc_change",
+    "gap",
+    "dow",
+    "month",
+    "mkt_SPY_ret_1",
+    "mkt_SPY_vol_20",
+    "mkt_SPY_vol_chg",
+    "mkt_VIX_ret_1",
+    "mkt_VIX_vol_20"
+  ],
+  "trained_at": "2026-11-22T01:32:58",
+  "train_range": [
+    "2010-03-16",
+    "2023-07-18"
+  ],
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.5142857142857142,
+    "precision": 0.5466101694915254,
+    "recall": 0.5707964601769911,
+    "f1": 0.5584415584415584,
+    "roc_auc": 0.49862295867165407,
+    "log_loss": 0.7100208637305673,
+    "positive_rate_pred": 0.5619047619047619,
+    "positive_rate_actual": 0.5380952380952381,
+    "n_samples": 840,
+    "tn": 174,
+    "fp": 214,
+    "fn": 194,
+    "tp": 258,
+    "report": {
+      "0": {
+        "precision": 0.47282608695652173,
+        "recall": 0.4484536082474227,
+        "f1-score": 0.4603174603174603,
+        "support": 388.0
+      },
+      "1": {
+        "precision": 0.5466101694915254,
+        "recall": 0.5707964601769911,
+        "f1-score": 0.5584415584415584,
+        "support": 452.0
+      }
+    },
+    "confident_subset": {
+      "n": 475,
+      "coverage": 0.5654761904761905,
+      "accuracy": 0.5010526315789474
+    }
+  },
+  "tuned_params": {
+    "subsample": 0.7,
+    "n_estimators": 150,
+    "min_child_weight": 5,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "colsample_bytree": 0.8
+  },
+  "walk_forward": {
+    "mean_accuracy": 0.5252236135957066,
+    "mean_precision": 0.5499387726181778,
+    "mean_recall": 0.5394864262150023,
+    "mean_f1": 0.5370745275596489,
+    "mean_roc_auc": 0.5258106472172429,
+    "std_accuracy": 0.025222979222918863
+  }
+}

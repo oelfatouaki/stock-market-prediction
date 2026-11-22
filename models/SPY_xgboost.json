@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "name": "xgboost",
+  "ticker": "SPY",
+  "features": [
+    "ret_1",
+    "ret_2",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20",
+    "ema_20",
+    "sma_50",
+    "ema_50",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "macd_diff",
+    "bb_width",
+    "bb_pos",
+    "atr_14",
+    "vol_10",
+    "vol_20",
+    "vol_chg",
+    "vol_ratio",
+    "hl_range",
+    "oc_change",
+    "gap",
+    "dow",
+    "month",
+    "mkt_SPY_ret_1",
+    "mkt_SPY_vol_20",
+    "mkt_SPY_vol_chg",
+    "mkt_VIX_ret_1",
+    "mkt_VIX_vol_20"
+  ],
+  "trained_at": "2026-11-22T01:33:37",
+  "train_range": [
+    "2010-03-16",
+    "2023-07-18"
+  ],
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.5321428571428571,
+    "precision": 0.5537555228276878,
+    "recall": 0.8068669527896996,
+    "f1": 0.6567685589519651,
+    "roc_auc": 0.4987950701154437,
+    "log_loss": 0.6963868533088194,
+    "positive_rate_pred": 0.8083333333333333,
+    "positive_rate_actual": 0.5547619047619048,
+    "n_samples": 840,
+    "tn": 71,
+    "fp": 303,
+    "fn": 90,
+    "tp": 376,
+    "report": {
+      "0": {
+        "precision": 0.4409937888198758,
+        "recall": 0.18983957219251338,
+        "f1-score": 0.26542056074766357,
+        "support": 374.0
+      },
+      "1": {
+        "precision": 0.5537555228276878,
+        "recall": 0.8068669527896996,
+        "f1-score": 0.6567685589519651,
+        "support": 466.0
+      }
+    },
+    "confident_subset": {
+      "n": 494,
+      "coverage": 0.5880952380952381,
+      "accuracy": 0.5445344129554656
+    }
+  },
+  "tuned_params": {},
+  "walk_forward": {
+    "mean_accuracy": 0.5091234347048299,
+    "mean_precision": 0.5511675312006266,
+    "mean_recall": 0.6716815265723171,
+    "mean_f1": 0.5914981506223665,
+    "mean_roc_auc": 0.4981172787115834,
+    "std_accuracy": 0.008158679249367697
+  }
+}

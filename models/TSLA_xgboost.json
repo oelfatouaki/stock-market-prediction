@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "name": "xgboost",
+  "ticker": "TSLA",
+  "features": [
+    "ret_1",
+    "ret_2",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20",
+    "ema_20",
+    "sma_50",
+    "ema_50",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "macd_diff",
+    "bb_width",
+    "bb_pos",
+    "atr_14",
+    "vol_10",
+    "vol_20",
+    "vol_chg",
+    "vol_ratio",
+    "hl_range",
+    "oc_change",
+    "gap",
+    "dow",
+    "month",
+    "mkt_SPY_ret_1",
+    "mkt_SPY_vol_20",
+    "mkt_SPY_vol_chg",
+    "mkt_VIX_ret_1",
+    "mkt_VIX_vol_20"
+  ],
+  "trained_at": "2026-11-22T01:33:34",
+  "train_range": [
+    "2010-09-08",
+    "2023-08-21"
+  ],
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.5110294117647058,
+    "precision": 0.5165394402035624,
+    "recall": 0.49271844660194175,
+    "f1": 0.5043478260869565,
+    "roc_auc": 0.5355846871094877,
+    "log_loss": 0.6941746422417477,
+    "positive_rate_pred": 0.48161764705882354,
+    "positive_rate_actual": 0.5049019607843137,
+    "n_samples": 816,
+    "tn": 214,
+    "fp": 190,
+    "fn": 209,
+    "tp": 203,
+    "report": {
+      "0": {
+        "precision": 0.5059101654846335,
+        "recall": 0.5297029702970297,
+        "f1-score": 0.5175332527206772,
+        "support": 404.0
+      },
+      "1": {
+        "precision": 0.5165394402035624,
+        "recall": 0.49271844660194175,
+        "f1-score": 0.5043478260869565,
+        "support": 412.0
+      }
+    },
+    "confident_subset": {
+      "n": 438,
+      "coverage": 0.5367647058823529,
+      "accuracy": 0.541095890410959
+    }
+  },
+  "tuned_params": {},
+  "walk_forward": {
+    "mean_accuracy": 0.5101289134438305,
+    "mean_precision": 0.53254524962004,
+    "mean_recall": 0.5298058150425075,
+    "mean_f1": 0.5261363102379738,
+    "mean_roc_auc": 0.5114427882814571,
+    "std_accuracy": 0.03187121233863128
+  }
+}

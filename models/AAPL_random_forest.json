@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "name": "random_forest",
+  "ticker": "AAPL",
+  "features": [
+    "ret_1",
+    "ret_2",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "sma_5",
+    "ema_5",
+    "sma_10",
+    "ema_10",
+    "sma_20",
+    "ema_20",
+    "sma_50",
+    "ema_50",
+    "rsi_14",
+    "macd",
+    "macd_signal",
+    "macd_diff",
+    "bb_width",
+    "bb_pos",
+    "atr_14",
+    "vol_10",
+    "vol_20",
+    "vol_chg",
+    "vol_ratio",
+    "hl_range",
+    "oc_change",
+    "gap",
+    "dow",
+    "month",
+    "mkt_SPY_ret_1",
+    "mkt_SPY_vol_20",
+    "mkt_SPY_vol_chg",
+    "mkt_VIX_ret_1",
+    "mkt_VIX_vol_20"
+  ],
+  "trained_at": "2026-11-22T01:32:13",
+  "train_range": [
+    "2010-03-16",
+    "2023-07-18"
+  ],
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.5273809523809524,
+    "precision": 0.5486725663716814,
+    "recall": 0.6858407079646017,
+    "f1": 0.6096361848574238,
+    "roc_auc": 0.4945887692728766,
+    "log_loss": 0.693268279726104,
+    "positive_rate_pred": 0.6726190476190477,
+    "positive_rate_actual": 0.5380952380952381,
+    "n_samples": 840,
+    "tn": 133,
+    "fp": 255,
+    "fn": 142,
+    "tp": 310,
+    "report": {
+      "0": {
+        "precision": 0.48363636363636364,
+        "recall": 0.3427835051546392,
+        "f1-score": 0.40120663650075417,
+        "support": 388.0
+      },
+      "1": {
+        "precision": 0.5486725663716814,
+        "recall": 0.6858407079646017,
+        "f1-score": 0.6096361848574238,
+        "support": 452.0
+      }
+    },
+    "confident_subset": {
+      "n": 106,
+      "coverage": 0.1261904761904762,
+      "accuracy": 0.5849056603773585
+    }
+  },
+  "tuned_params": {},
+  "walk_forward": {
+    "mean_accuracy": 0.5220035778175313,
+    "mean_precision": 0.5422687316702579,
+    "mean_recall": 0.6050665433183307,
+    "mean_f1": 0.5598480519860213,
+    "mean_roc_auc": 0.5189494231762037,
+    "std_accuracy": 0.0126114896114594
+  }
+}

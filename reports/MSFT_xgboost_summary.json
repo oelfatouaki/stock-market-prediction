@@ -1,0 +1,81 @@
+{
+  "ticker": "MSFT",
+  "model": "xgboost",
+  "test_range": [
+    "2023-07-19",
+    "2026-11-19"
+  ],
+  "metrics": {
+    "accuracy": 0.49047619047619045,
+    "precision": 0.5152603231597845,
+    "recall": 0.6449438202247191,
+    "f1": 0.5728542914171657,
+    "roc_auc": 0.5115972123453278,
+    "log_loss": 0.7015777928549358,
+    "positive_rate_pred": 0.6630952380952381,
+    "positive_rate_actual": 0.5297619047619048,
+    "n_samples": 840,
+    "tn": 125,
+    "fp": 270,
+    "fn": 158,
+    "tp": 287,
+    "report": {
+      "0": {
+        "precision": 0.4416961130742049,
+        "recall": 0.31645569620253167,
+        "f1-score": 0.3687315634218289,
+        "support": 395.0
+      },
+      "1": {
+        "precision": 0.5152603231597845,
+        "recall": 0.6449438202247191,
+        "f1-score": 0.5728542914171657,
+        "support": 445.0
+      }
+    },
+    "confident_subset": {
+      "n": 473,
+      "coverage": 0.5630952380952381,
+      "accuracy": 0.5369978858350951
+    }
+  },
+  "walk_forward": {
+    "mean_accuracy": 0.5155635062611806,
+    "mean_precision": 0.5422093627948813,
+    "mean_recall": 0.5388460733870795,
+    "mean_f1": 0.5337249621151627,
+    "mean_roc_auc": 0.5245008365707828,
+    "std_accuracy": 0.035854123326391575
+  },
+  "backtest": {
+    "total_return": -0.041744452715513525,
+    "cagr": -0.012710762858494151,
+    "annualized_vol": 0.2232629455263682,
+    "sharpe": 0.052794082425644394,
+    "sortino": 0.06992641278087233,
+    "max_drawdown": 0.3516225287280178,
+    "win_rate_days": 0.4149560117302053,
+    "best_day": 0.1550672888658728,
+    "worst_day": -0.1009314350931446,
+    "n_days": 840,
+    "trades": 250,
+    "total_cost": 0.25,
+    "exposure": 0.6630952380952381,
+    "threshold": 0.5,
+    "cost_per_trade": 0.001,
+    "mode": "long"
+  },
+  "buy_and_hold": {
+    "total_return": 0.40215722052526925,
+    "cagr": 0.10672319939921948,
+    "annualized_vol": 0.262319227197571,
+    "sharpe": 0.5164146679456606,
+    "sortino": 0.7685233861580243,
+    "max_drawdown": 0.3449839424510165,
+    "win_rate_days": 0.5297619047619048,
+    "best_day": 0.1550672888658728,
+    "worst_day": -0.0999314350931446,
+    "n_days": 840
+  },
+  "artifact": "/Users/mac/stock-market/models/MSFT_xgboost.joblib"
+}

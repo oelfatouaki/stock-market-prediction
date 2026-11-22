@@ -1,0 +1,81 @@
+{
+  "ticker": "AAPL",
+  "model": "random_forest",
+  "test_range": [
+    "2023-07-19",
+    "2026-11-19"
+  ],
+  "metrics": {
+    "accuracy": 0.5273809523809524,
+    "precision": 0.5486725663716814,
+    "recall": 0.6858407079646017,
+    "f1": 0.6096361848574238,
+    "roc_auc": 0.4945887692728766,
+    "log_loss": 0.693268279726104,
+    "positive_rate_pred": 0.6726190476190477,
+    "positive_rate_actual": 0.5380952380952381,
+    "n_samples": 840,
+    "tn": 133,
+    "fp": 255,
+    "fn": 142,
+    "tp": 310,
+    "report": {
+      "0": {
+        "precision": 0.48363636363636364,
+        "recall": 0.3427835051546392,
+        "f1-score": 0.40120663650075417,
+        "support": 388.0
+      },
+      "1": {
+        "precision": 0.5486725663716814,
+        "recall": 0.6858407079646017,
+        "f1-score": 0.6096361848574238,
+        "support": 452.0
+      }
+    },
+    "confident_subset": {
+      "n": 106,
+      "coverage": 0.1261904761904762,
+      "accuracy": 0.5849056603773585
+    }
+  },
+  "walk_forward": {
+    "mean_accuracy": 0.5220035778175313,
+    "mean_precision": 0.5422687316702579,
+    "mean_recall": 0.6050665433183307,
+    "mean_f1": 0.5598480519860213,
+    "mean_roc_auc": 0.5189494231762037,
+    "std_accuracy": 0.0126114896114594
+  },
+  "backtest": {
+    "total_return": 0.3485807298769077,
+    "cagr": 0.09386338376110759,
+    "annualized_vol": 0.22695484926318804,
+    "sharpe": 0.5077231678733899,
+    "sortino": 0.638414376102229,
+    "max_drawdown": 0.2764153782606774,
+    "win_rate_days": 0.4483260553129549,
+    "best_day": 0.1532886144782728,
+    "worst_day": -0.0924561521253716,
+    "n_days": 840,
+    "trades": 244,
+    "total_cost": 0.244,
+    "exposure": 0.6726190476190477,
+    "threshold": 0.5,
+    "cost_per_trade": 0.001,
+    "mode": "long"
+  },
+  "buy_and_hold": {
+    "total_return": 0.7833221104577548,
+    "cagr": 0.1895123029964021,
+    "annualized_vol": 0.26432055527991355,
+    "sharpe": 0.7880873251196555,
+    "sortino": 1.1026329579676706,
+    "max_drawdown": 0.3336052250719642,
+    "win_rate_days": 0.5387365911799762,
+    "best_day": 0.1532886144782728,
+    "worst_day": -0.0924561521253716,
+    "n_days": 840
+  },
+  "artifact": "/Users/mac/stock-market/models/AAPL_random_forest.joblib"
+}
