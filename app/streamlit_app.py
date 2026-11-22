@@ -176,7 +176,7 @@ fig.add_trace(
 fig.update_layout(height=560, xaxis_rangeslider_visible=False, template="plotly_white", margin={"t": 20, "b": 20})
 fig.update_yaxes(title_text="Price (split/dividend adjusted)", row=1, col=1)
 fig.update_yaxes(title_text="Volume", row=2, col=1)
-st.plotly_chart(fig, width="stretch")
+st.plotly_chart(fig)
 
 # --- Backtest ----------------------------------------------------------------
 st.subheader("Backtest on the selected period")
@@ -196,7 +196,7 @@ equity_fig.update_layout(
     height=400,
     margin={"t": 40, "b": 20},
 )
-st.plotly_chart(equity_fig, width="stretch")
+st.plotly_chart(equity_fig)
 
 c1, c2, c3, c4 = st.columns(4)
 c1.metric("Strategy total return", format_pct(result["metrics"]["total_return"]))
