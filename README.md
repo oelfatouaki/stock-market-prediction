@@ -144,10 +144,6 @@ models/              saved joblib artefacts + JSON metadata (gitignored)
 reports/             CSV tables, SHAP plot and figures
 ```
 
-## 10. Suggested LinkedIn post (short)
 
-> I built an end-to-end ML project to predict next-day stock direction. The most interesting result was that **none of my models beat "always predict up"** — across AAPL, MSFT, TSLA and SPY, ROC-AUC hovered around 0.5. I used a strict chronological split, walk-forward CV, a holdout touched once, and a backtest with trading costs. The strategies reduced drawdown by simply staying in cash, but did not beat buy-and-hold returns. Building the *honest evaluation* turned out to be far more instructive than chasing a high accuracy number. Repo: [link]
-
----
 
 Built for learning and portfolio purposes. No returns are guaranteed.
