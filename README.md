@@ -6,6 +6,14 @@ A complete, honest machine-learning project that predicts whether a stock closes
 
 ![Backtest equity curves](reports/figures/AAPL_equity_all_models.png)
 
+## About me
+
+Hi, I'm Oussama, a Computer Science graduate learning data science and AI. I'm building real-world projects in Python and machine learning to prepare for a career in data.
+
+- **Languages and tools:** Python, pandas, NumPy, scikit-learn, XGBoost, LightGBM, `yfinance`, `ta`, SHAP, Streamlit, joblib, Git, Jupyter
+- **Interests:** machine learning for financial time series, honest model evaluation, cost-aware backtesting, explainable AI, and building end-to-end applications
+- **Currently learning:** point-in-time feature engineering, walk-forward validation, transaction-cost modelling, SHAP interpretability, and deploying interactive dashboards
+
 ---
 
 ## 1. Problem
